@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владислав Грибович](https://up.htmlacademy.ru/htmlcss/35/user/2068101).
-* Наставник: `Неизвестно`.
+* Наставник: [Карина Карапетян](https://htmlacademy.ru/profile/karinaweb).
 
 ---
 
