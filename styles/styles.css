@@ -224,7 +224,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.welcome-sedona:after {
+.welcome-sedona::after {
   position: absolute;
   top: 429px;
   left: 0;
@@ -251,7 +251,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  list-style-type: none
+  list-style-type: none;
 }
 
 .advantages-subitem {
@@ -428,10 +428,11 @@ body {
 }
 
 .subscribe-main {
+  color: #ffffff;
+  background-color: #000000;
   background-image: url("../image/background/background-subscribe.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  color: #ffffff;
 }
 
 .subscribe-title {
@@ -512,6 +513,8 @@ body {
   font-size: 18px;
   line-height: 24px;
   text-align: left;
+  text-decoration: none;
+  background-color: #ffffff;
   color: rgba(0, 0, 0, 0.6);
   border: none;
   width: 452px;
@@ -526,14 +529,12 @@ body {
 }
 
 .field:focus {
-  border: 3px solid #83b3d3;
-  padding-left: 11px;
+  box-shadow: inset 0 0 0 3px #83b3d3;
   outline: none;
 }
 
 .field:active {
-  border: 2px solid #3f5e72;
-  padding-left: 12px;
+  box-shadow: inset 0 0 0 2px #3f5e72;
   outline: none;
 }
 
@@ -625,7 +626,7 @@ body {
 
 /*Каталог, фильтр*/
 .main-catalog-title {
-  height: 412px;
+  min-height: 412px;
   box-sizing: border-box;
   padding: 35px 70px 70px;
   color: #ffffff;
@@ -649,6 +650,7 @@ body {
 .breadcrumb-link {
   font-size: 16px;
   color: #ffffff;
+  -webkit-text-decoration-line: none;
   text-decoration-line: none;
 }
 
@@ -693,7 +695,7 @@ body {
 }
 
 .control-input[type="checkbox"] + .control-mark {
-  border-radius: 4px
+  border-radius: 4px;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -805,6 +807,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   background-color: #f2f2f2;
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
@@ -829,7 +832,6 @@ body {
   right: 0;
   padding: 12px 20px 12px 10px;
   color: rgba(0, 0, 0, 0.3);
-
 }
 
 .filter-cost-min {
@@ -946,6 +948,7 @@ body {
   background-position: right 18px center;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -998,7 +1001,7 @@ body {
 }
 
 .button-layout:focus {
-  border-color: #68a2Ca;
+  border-color: #68a2ca;
   outline: none;
 }
 
@@ -1159,6 +1162,7 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -1281,7 +1285,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -1363,13 +1367,6 @@ input[type=number] {
   column-gap: 18px;
 }
 
-.modal-label {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-transform: capitalize;
-}
-
 .modal-date {
   font: inherit;
   width: 100%;
@@ -1434,6 +1431,7 @@ input[type=number] {
   line-height: 24px;
   margin: 0;
   padding-top: 14px;
+  text-transform: capitalize;
 }
 
 .guests-number-wrapper {
